@@ -1,0 +1,228 @@
+:root {
+    --blue-brand: #1c9bef;
+    --google-color: #424649;
+    --border-button: #e8e9ec;
+    --white: #ffffff;
+    --gray-color: #e9eef0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: roboto, sans-serif;
+}
+.header {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+.header-logo .fa-twitter {
+    color: var(--blue-brand);
+    font-size: 4rem;
+}
+
+main {
+    padding: 40px 15px 0 40px;
+    display: block;
+    width: 90%;
+    margin: 0;
+}
+
+.principal-title h1 {
+    margin-top: 30px;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 5rem;
+    padding-right: auto;
+}
+
+.join-title h5 {
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    padding-right: 20px;
+    margin-bottom: 2rem;
+}
+.buttons {
+    width: 300px;
+}
+.buttons .button-google , .buttons .button-apple {
+
+    width: 300px;
+    height: 44px;
+    border-radius: 50px;
+    color: var(--google-color);
+    background-color: var(--white);
+    border-color: var(--google-color);
+    margin-bottom: 15px;
+}
+
+.button-google .fa-google, .button-apple .fa-apple {
+    font-size: 1.8rem;
+}
+
+.main-division {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+.main-division span {
+    font-size: 1.3rem;
+}
+
+.main-division div {
+    width: 45%;
+    border-top: 1px solid var(--google-color);
+}
+
+.button-register {
+    padding: 10px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: var(--blue-brand);
+    color: var(--white);
+}
+
+.politics {
+    font-size: 1.1rem;
+}
+
+.politics a {
+    text-decoration: none;
+    color: var(--blue-brand);
+}
+
+.login  {
+    margin: 50px 0 0;
+}
+
+.login p {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.login button {
+    margin-top: 2rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: var(--white);
+    color: var(--blue-brand);
+    border-color: var(--border-button);
+}
+
+.main-image {
+    margin-top: 40px;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    background-image: url('https://abs.twimg.com/sticky/illustrations/lohp_1302x955.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image .fa-twitter {
+    color: var(--white);
+    font-size: 23rem;
+}
+
+.footer-list {
+    padding: 10px 3px;
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+}
+
+.footer-list a, .footer-list p{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0 10px 12px;
+    color: var(--google-color);
+    line-height: 20px;
+}
+.helper{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+@media screen and (min-width: 700px){
+    .principal-title h1 {
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+    .join-title h5 {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .main-image {
+        width: 600px;
+        height: 285px;
+    }
+    .main-image .fa-twitter{
+        font-size: 20rem;
+    }
+    .footer-list {
+        width: 600px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        width: 100%;
+        display: block;
+    }
+    .header {
+        width: 600px;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    main {
+        min-width: 437px;
+        max-width: 760px;
+    }
+    .footer-list {
+        width: 920px;
+    }
+    .helper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .main-image {
+        min-width: 20vw;
+        max-width: 50vw;
+        height: 100%;
+        margin: 0;
+    }
+    .main-image .fa-twitter{
+        font-size: 25rem;
+    }
+}
